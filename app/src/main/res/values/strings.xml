@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Card Info Finder</string>
+    <string name="input_card_details">Input Card Details</string>
+    <string name="scan_card">Scan Card</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_credit_debit_card_number_text">Enter Credit/Debit Card Number</string>
+    <string name="credit_card_number_input_hint">9876 6543 3210 1321 111</string>
+    <string name="check">Check</string>
 </resources>

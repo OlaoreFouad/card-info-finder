@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/finderOptionsFragment2">
+    <fragment
+        android:id="@+id/finderOptionsFragment2"
+        android:name="com.example.cardinfofinder.ui.info_finder.fragments.FinderOptionsFragment"
+        android:label="FinderOptionsFragment" >
+        <action
+            android:id="@+id/action_finderOptionsFragment2_to_inputCardDetailsFragment"
+            app:destination="@id/inputCardDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputCardDetailsFragment"
+        android:name="com.example.cardinfofinder.ui.info_finder.fragments.InputCardDetailsFragment"
+        android:label="InputCardDetailsFragment" />
+</navigation>
