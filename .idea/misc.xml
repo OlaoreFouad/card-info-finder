@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_input_white.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31521739130434784" />
+        <entry key="app/src/main/res/layout/fragment_card_details.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/fragment_finder_options.xml" value="0.31521739130434784" />
         <entry key="app/src/main/res/layout/fragment_input_card_details.xml" value="0.31521739130434784" />
       </map>

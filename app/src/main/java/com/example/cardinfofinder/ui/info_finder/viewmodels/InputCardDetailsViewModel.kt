@@ -17,8 +17,8 @@ class InputCardDetailsViewModel @Inject constructor(
     var infoFinderRepository: InfoFinderRepository
 ) : ViewModel() {
 
-    private var _information = MutableLiveData<Result<CardInfoResponse>>()
-    val information: LiveData<Result<CardInfoResponse>>
+    private var _information = MutableLiveData<Result<CardInfoResponse>?>()
+    val information: LiveData<Result<CardInfoResponse>?>
         get() = _information
 
     fun lookup(bin: String) {
@@ -31,6 +31,10 @@ class InputCardDetailsViewModel @Inject constructor(
                 _information.postValue(Result.Error(ex.message!!))
             }
         }
+    }
+
+    fun complete() {
+        _information.postValue(null)
     }
 
 }

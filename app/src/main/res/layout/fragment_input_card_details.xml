@@ -5,6 +5,12 @@
 
     <data>
 
+        <import type="android.view.View" alias="V"/>
+        
+        <variable
+            name="isLoading"
+            type="Boolean" />
+
     </data>
 
     <LinearLayout
@@ -38,12 +44,33 @@
             app:keep_hint="true"
             app:mask="#### #### #### #### ###" />
 
-        <Button
-            android:id="@+id/check_card_details_button"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/check" />
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:elevation="4dp"
+                android:visibility="@{ isLoading ? V.VISIBLE : V.GONE }"
+                android:id="@+id/loading_progress"
+                android:indeterminateTint="@android:color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias=".3"
+                />
+
+            <Button
+                android:id="@+id/check_card_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/check" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 </layout>

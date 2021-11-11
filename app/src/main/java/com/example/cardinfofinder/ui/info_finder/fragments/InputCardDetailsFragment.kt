@@ -11,6 +11,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.cardinfofinder.data.common.ResultStatus
+import com.example.cardinfofinder.data.models.info_finder.DomainCardDetails
 import com.example.cardinfofinder.databinding.FragmentInputCardDetailsBinding
 import com.example.cardinfofinder.ui.info_finder.viewmodels.InputCardDetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -38,15 +39,23 @@ class InputCardDetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.information.observe(viewLifecycleOwner, {
-            when (it.status) {
-                ResultStatus.LOADING -> {
-
-                }
+            binding.isLoading = it?.status == ResultStatus.LOADING
+            when (it?.status) {
                 ResultStatus.SUCCESS -> {
-                    Log.d("InputCardFragment", it.data.toString())
+                    val data = DomainCardDetails(
+                        bank = it!!.data?.bank?.name!!,
+                        brand = it.data!!.brand!!,
+                        country = it.data.country?.name + it.data.country?.emoji,
+                        type = it.data.type!!
+                    )
+                    viewModel.complete()
+                    binding.cardNumberInput.setText("")
+                    navController.navigate(
+                        InputCardDetailsFragmentDirections.actionInputCardDetailsFragmentToCardDetailsFragment(data)
+                    )
                 }
                 ResultStatus.ERROR -> {
-                    Log.d("InputCardFragment", it.message)
+                    Toast.makeText(requireContext(), it.message, Toast.LENGTH_LONG).show()
                 }
             }
         })

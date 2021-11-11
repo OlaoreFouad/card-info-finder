@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".ui.info_finder.fragments.CardDetailsFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/card_brand"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            tools:text="@string/mastercard"
+            android:id="@+id/card_brand"
+            android:textColor="#A1201B1B"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/card_type"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            tools:text="@string/debit"
+            android:id="@+id/card_type"
+            android:textColor="#A1201B1B"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/card_bank"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            tools:text="@string/zenith"
+            android:id="@+id/card_bank"
+            android:textColor="#A1201B1B"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/card_country"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            tools:text="@string/estonia"
+            android:id="@+id/card_country"
+            android:textColor="#A1201B1B"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

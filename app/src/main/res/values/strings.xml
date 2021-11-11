@@ -7,4 +7,12 @@
     <string name="enter_credit_debit_card_number_text">Enter Credit/Debit Card Number</string>
     <string name="credit_card_number_input_hint">9876 6543 3210 1321 111</string>
     <string name="check">Check</string>
+    <string name="card_brand">Card Brand</string>
+    <string name="card_type">Card Type</string>
+    <string name="card_bank">Card Bank</string>
+    <string name="card_country">Card Country</string>
+    <string name="mastercard">MASTERCARD</string>
+    <string name="debit">Debit</string>
+    <string name="zenith">ZENITH BANK</string>
+    <string name="estonia">Estonia</string>
 </resources>

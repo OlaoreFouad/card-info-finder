@@ -15,5 +15,17 @@
     <fragment
         android:id="@+id/inputCardDetailsFragment"
         android:name="com.example.cardinfofinder.ui.info_finder.fragments.InputCardDetailsFragment"
-        android:label="InputCardDetailsFragment" />
+        android:label="InputCardDetailsFragment" >
+        <action
+            android:id="@+id/action_inputCardDetailsFragment_to_cardDetailsFragment"
+            app:destination="@id/cardDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDetailsFragment"
+        android:name="com.example.cardinfofinder.ui.info_finder.fragments.CardDetailsFragment"
+        android:label="CardDetailsFragment" >
+        <argument
+            android:name="details"
+            app:argType="com.example.cardinfofinder.data.models.info_finder.DomainCardDetails" />
+    </fragment>
 </navigation>
