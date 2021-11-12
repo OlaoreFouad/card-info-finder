@@ -8,15 +8,15 @@ button, the card numbers are verified and the details are presented to the user.
 
 1. Click on "Input Card Details" button
 
-<img src="https://github.com/OlaoreFouad/card-info-finder/tree/main/shots/input_card_details.jpeg" width="250" />   
+<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/input_card_details.jpeg" width="250" />   
 
 2. Enter Card details and click "Check"
 
-<img src="https://github.com/OlaoreFouad/card-info-finder/tree/main/shots/enter_credit_card_number.jpeg" width="250" />   
+<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/enter_credit_card_number.jpeg" width="250" />   
 
 3. Card details are displayed.
 
-<img src="https://github.com/OlaoreFouad/card-info-finder/tree/main/shots/card_details_page.jpeg" width="250" />   
+<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/card_details_page.jpeg" width="250" />   
 
 
 ### The Structure
@@ -31,7 +31,7 @@ This project makes use of the following technologies:
 
 ### The Package Structure
 
-<img src="https://github.com/OlaoreFouad/card-info-finder/tree/main/shots/package_structure.jpeg" width="250" />   
+<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/package_structure.jpeg" width="250" />   
 
 
 The project files were grouped by feature as seen in the image below where:
