@@ -31,7 +31,7 @@ This project makes use of the following technologies:
 
 ### The Package Structure
 
-<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/package_structure.jpeg" width="250" />   
+<img src="https://github.com/OlaoreFouad/card-info-finder/blob/main/shots/package_structure.png" width="250" />   
 
 
 The project files were grouped by feature as seen in the image below where:
