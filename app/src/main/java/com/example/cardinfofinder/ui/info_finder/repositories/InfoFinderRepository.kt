@@ -7,7 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class InfoFinderRepository @Inject constructor(
+open class InfoFinderRepository @Inject constructor(
     var infoFinderHelper: InfoFinderHelper
 ) {
 
